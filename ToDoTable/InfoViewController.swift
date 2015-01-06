@@ -10,7 +10,7 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
-    var currentToDo : ToDo?
+    var currentToDo : ListItem?
 
     @IBOutlet weak var shortNameField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
@@ -23,13 +23,7 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    shortNameField.text = currentToDo!.shortName
-//    descriptionField.text = currentToDo!.description
-//    priorityField.text = currentToDo!.priority
-    completedField.text = currentToDo!.completed
-    startDateField.text = currentToDo!.startDate
-    endDataField.text = currentToDo!.endDate
-    notesField.text = currentToDo!.notes
+    shortNameField.text = currentToDo!.label
         
         // Do any additional setup after loading the view.
     }

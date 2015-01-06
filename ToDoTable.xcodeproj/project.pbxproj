@@ -12,7 +12,7 @@
 		6AC0BE951A56392600DE5927 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AC0BE941A56392600DE5927 /* Images.xcassets */; };
 		6AC0BE981A56392600DE5927 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC0BE961A56392600DE5927 /* LaunchScreen.xib */; };
 		6AC0BEA41A56392600DE5927 /* ToDoTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0BEA31A56392600DE5927 /* ToDoTableTests.swift */; };
-		6AC0BEAE1A563C8400DE5927 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0BEAD1A563C8400DE5927 /* ToDo.swift */; };
+		6AC0BEAE1A563C8400DE5927 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0BEAD1A563C8400DE5927 /* ListItem.swift */; };
 		6AC0BEB01A563D0000DE5927 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0BEAF1A563D0000DE5927 /* ToDoTableViewController.swift */; };
 		6AC0BEB21A563D4B00DE5927 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC0BEB11A563D4B00DE5927 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		6AC0BE9D1A56392600DE5927 /* ToDoTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC0BEA21A56392600DE5927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AC0BEA31A56392600DE5927 /* ToDoTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableTests.swift; sourceTree = "<group>"; };
-		6AC0BEAD1A563C8400DE5927 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		6AC0BEAD1A563C8400DE5927 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		6AC0BEAF1A563D0000DE5927 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		6AC0BEB11A563D4B00DE5927 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 		6AC0BE7F1A56392600DE5927 = {
 			isa = PBXGroup;
 			children = (
-				6AC0BEAD1A563C8400DE5927 /* ToDo.swift */,
+				6AC0BEAD1A563C8400DE5927 /* ListItem.swift */,
 				6AC0BE8A1A56392600DE5927 /* ToDoTable */,
 				6AC0BEA01A56392600DE5927 /* ToDoTableTests */,
 				6AC0BE891A56392600DE5927 /* Products */,
@@ -221,7 +221,7 @@
 				6AC0BE8E1A56392600DE5927 /* AppDelegate.swift in Sources */,
 				6AC0BEB01A563D0000DE5927 /* ToDoTableViewController.swift in Sources */,
 				6AC0BEB21A563D4B00DE5927 /* InfoViewController.swift in Sources */,
-				6AC0BEAE1A563C8400DE5927 /* ToDo.swift in Sources */,
+				6AC0BEAE1A563C8400DE5927 /* ListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

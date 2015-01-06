@@ -10,58 +10,58 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
     
-    var topLevelList = [ToDo]()
+    var topLevelList = [ListItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var newToDo = ToDo(shortName: "iOS course", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        var newToDo = ListItem(label: "iOS course")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Painting house", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Painting house")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Termite inspection", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Termite inspection")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Police statement", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Police statement")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Cook dinner", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Cook dinner")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Painting fence", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Painting fence")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Trim hedge", completed: "N", startDate: "10/12/2014", endDate: "",   notes: "")
+        newToDo = ListItem(label: "Trim hedge")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Grout enterance way", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Grout enterance way")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Exercise", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Exercise")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Get seedlings", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Get seedlings")
         topLevelList.append(newToDo)
         
         
-        newToDo = ToDo(shortName: "Complete Marketing Essentials course", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Complete Marketing Essentials course")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Tidy study", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Tidy study")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Go to Tip", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Go to Tip")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Redo broken tiles", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Redo broken tiles")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Daily walk", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Daily walk")
         topLevelList.append(newToDo)
         
-        newToDo = ToDo(shortName: "Research Lilly Pilly hedge", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
+        newToDo = ListItem(label: "Research Lilly Pilly hedge")
         topLevelList.append(newToDo)
         
         
@@ -107,13 +107,13 @@ class ToDoTableViewController: UITableViewController {
 
         // Configure the cell...
         var priorityIcon: String
-        var currentToDo: ToDo
+        var currentToDo: ListItem
         
 //        if indexPath.section == 0 {
             currentToDo = topLevelList[indexPath.row]
 //        }
         
-        cell.textLabel?.text = currentToDo.shortName
+        cell.textLabel?.text = currentToDo.label
 //        cell.detailTextLabel?.text = currentToDo.description
         
         
