@@ -10,60 +10,59 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
     
-    var toDoListActive = [ToDo]()
-    var toDoListCompleted = [ToDo]()
+    var topLevelList = [ToDo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var newToDo = ToDo(shortName: "iOS course", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Painting house", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Termite inspection", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Police statement", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Cook dinner", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Painting fence", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Trim hedge", completed: "N", startDate: "10/12/2014", endDate: "",   notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Grout enterance way", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Exercise", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Get seedlings", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         
         newToDo = ToDo(shortName: "Complete Marketing Essentials course", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Tidy study", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Go to Tip", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Redo broken tiles", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Daily walk", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         newToDo = ToDo(shortName: "Research Lilly Pilly hedge", completed: "N", startDate: "10/12/2014", endDate: "", notes: "")
-        toDoListActive.append(newToDo)
+        topLevelList.append(newToDo)
         
         
        // newToDo = ToDo(shortName: "Mow lawn", description: "iOS course", priority: "H", completed: "Y", startDate: "10/12/2014", endDate: "", notes: "")
@@ -90,14 +89,7 @@ class ToDoTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        if section == 0 {
-            return toDoListActive.count
-        }
-            else {
-            return toDoListCompleted.count
-        }
+        return topLevelList.count
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -117,12 +109,9 @@ class ToDoTableViewController: UITableViewController {
         var priorityIcon: String
         var currentToDo: ToDo
         
-        if indexPath.section == 0 {
-            currentToDo = toDoListActive[indexPath.row]
-        }
-            else {
-            currentToDo = toDoListCompleted[indexPath.row]
-        }
+//        if indexPath.section == 0 {
+            currentToDo = topLevelList[indexPath.row]
+//        }
         
         cell.textLabel?.text = currentToDo.shortName
 //        cell.detailTextLabel?.text = currentToDo.description
@@ -196,11 +185,11 @@ class ToDoTableViewController: UITableViewController {
         var index = self.tableView.indexPathForSelectedRow()
         
             if index!.section == 0 {
-            let selectedToDo = toDoListActive[index!.row]
+            let selectedToDo = topLevelList[index!.row]
             secondScene.currentToDo = selectedToDo
         }
         else {
-            let selectedToDo = toDoListActive[index!.row]
+            let selectedToDo = topLevelList[index!.row]
             secondScene.currentToDo = selectedToDo
             
         }
